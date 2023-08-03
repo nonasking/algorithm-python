@@ -14,3 +14,6 @@ x, y = input().split()
 x, y = map(int, input().split())
 # 빠르게
 x, y = sys.stdin.readline().split()
+# 한줄씩
+for x in sys.stdin:
+  print(x.rstrip())
