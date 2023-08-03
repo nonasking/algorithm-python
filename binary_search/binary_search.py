@@ -44,3 +44,9 @@ x = 4
 
 print(bisect_left(a,x))   # 2
 print(bisect_right(a,x))  # 4
+
+# 값이 특정 범위(left~right)에 속하는 데이터 갯수 구하기
+def count_by_range(array, left_value, right_value):
+	right_index = bisect_right(array, right_value)
+	left_index = bisect_left(array, left_value)
+	return right_index - left_index
