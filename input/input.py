@@ -13,4 +13,4 @@ x, y = input().split()
 # 형변환
 x, y = map(int, input().split())
 # 빠르게
-x, y = map(int,sys.stdin.readline().split())
+x, y = sys.stdin.readline().split()
