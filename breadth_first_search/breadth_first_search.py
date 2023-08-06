@@ -1,4 +1,7 @@
 # BFS 기본 예시
+from collections import deque
+
+
 def bfs(graph, start, visited):
 	queue = deque([start])
     visited(start) = True
