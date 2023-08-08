@@ -1,3 +1,6 @@
+# n * m 2차원 배열 초기화
+grid = [[0]*n for _ in range(m)] 
+
 # n * n 배열 원소 출력
 for i in range(n):
     for j in range(n):
