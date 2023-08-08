@@ -62,6 +62,7 @@ for i in range(1, n+1):
 
 # 2. 힙 사용
 import sys
+import heapq
 input = sys.stdin.readline
 INF = int(1e9) # 무한을 의미하는 값으로 10억을 설정
 
