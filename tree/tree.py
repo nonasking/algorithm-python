@@ -12,3 +12,11 @@ def pre_order(node):
         pre_order(tree[node.left_node])
     if node.right_node !== None:
         pre_order(tree[node.right_node])
+
+# 중위 순회(in-order traverse)
+def in_order(node):
+    if node.left_node !== None:
+        in_order(tree[node.left_node])
+    print(node.data, end=' ')
+    if node.right_node !== None:
+        in_order(tree[node.right_node])
