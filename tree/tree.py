@@ -20,3 +20,11 @@ def in_order(node):
     print(node.data, end=' ')
     if node.right_node !== None:
         in_order(tree[node.right_node])
+
+# 중위 순회(post-order traverse)
+def post_order(node):
+    if node.left_node !== None:
+        post_order(tree[node.left_node])
+    if node.right_node !== None:
+        post_order(tree[node.right_node])
+    print(node.data, end=' ')
