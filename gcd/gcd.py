@@ -1,4 +1,4 @@
-# 최대공약수(GCD) 구하기
+# 최대공약수(GCD, Greatest Common Divisor) 구하기
 # a>b라고 가정
 def gcd(a,b):
 	if a % b == 0:
