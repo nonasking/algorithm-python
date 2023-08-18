@@ -29,3 +29,7 @@ l = ['a','b','c','d']
 l.remove('b')
 print(l) # ['a','c','d']
 
+# 리스트에서 특정 요소가 등장하는 첫 번째 인덱스 반환
+l = ['a','b','c','d','b']
+print(l.index('b')) # 1
+print(l.index('z')) # ValueError
