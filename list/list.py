@@ -33,3 +33,8 @@ print(l) # ['a','c','d']
 l = ['a','b','c','d','b']
 print(l.index('b')) # 1
 print(l.index('z')) # ValueError
+
+# 람다 표현식
+def add_1(x):
+    return x+1
+add_1 = lambda x: x+1
