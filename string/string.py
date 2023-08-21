@@ -10,3 +10,6 @@ print(word.capitalize()) # Abc
 word = 'ABC'
 print(word.lower()) # abc
 
+# 문자열을 구분자 기준으로 자른 리스트 만들기
+word = 'a/b/c'
+print(word.split('/'))
