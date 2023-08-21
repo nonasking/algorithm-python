@@ -38,3 +38,7 @@ print(l.index('z')) # ValueError
 def add_1(x):
     return x+1
 add_1 = lambda x: x+1
+
+# 리스트의 값을 구분자로 연결한 문자열 만들기
+l = ['a','b','c']
+print('/'.join(s for s in l))
