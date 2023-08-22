@@ -2,6 +2,10 @@
 print(8//2, 8%2)
 print(divmod(8,2))
 
+# 제곱근
+import math
+print(math.sqrt(2)) # 1.4142....
+
 # 절댓값
 print(abs(-1)) # 1
 
