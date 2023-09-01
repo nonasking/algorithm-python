@@ -11,5 +11,6 @@ queue.reverse() # 큐 안의 값들 순서 뒤집기
 print(queue) # 나중에 들어온 값부터 출력
 
 # 리스트를 큐로 만들기
+from collections import deque
 l = [1,2,3]
 queue = deque(l)
