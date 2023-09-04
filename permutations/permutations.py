@@ -1,5 +1,8 @@
 # 순열
 # 경우의 수는 nPr = n! / (n-r)!
+import math
+print(math.perm(2,2))
+
 # 각 경우를 직접 구할 경우
 import itertools
 data = [1,2]
