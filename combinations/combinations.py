@@ -1,5 +1,8 @@
 # 조합
 # 경우의 수는 nCr = n! / r! * (n-r)!
+import math
+print(math.comb(3,2))
+
 # 각각의 경우를 직접 구할 경우
 import itertools
 data = [1,2,3]
