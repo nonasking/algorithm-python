@@ -1,7 +1,6 @@
 # 유전법칙 (PCCP 모의고사 1회 - 3번)
 # https://school.programmers.co.kr/learn/courses/15008/lessons/121685
 
-
 def get_next_node(before, node):
     if before == 'RR':
         return 'RR'
