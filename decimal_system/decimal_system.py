@@ -12,6 +12,11 @@ while n != 0:
 
 print(result[::-1])
 
+# 10진법 -> 2진법, 8진법, 16진법 변환(모듈 사용)
+b = format(10, '#b')
+o = format(10, '#o')
+h = format(10, '#x')
+
 # N진법 -> 10진법 변환
 import sys
 
