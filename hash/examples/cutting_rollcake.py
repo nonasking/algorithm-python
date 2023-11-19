@@ -4,17 +4,24 @@
 
 def solution(topping):
     result = 0
+    first = {i : topping[i] for i in range(len(topping))}    
+    first_map = {}
     
-    first = {top: topping.count(top) for top in topping}
+    for i in range(len(topping)):
+        if topping[i] in first_map:
+            first_map[topping[i]] += 1
+        else:
+            first_map[topping[i]] = 1
     
     second = set()
-    for top in reversed(topping):
-        second.add(top)
-        if first[top] > 1:
-            first[top] -= 1
+    
+    for i in range(len(topping)):
+        second.add(first[i])
+        if first_map[first[i]] == 1:
+            first_map.pop(first[i])
         else:
-            del first[top]
-        if len(first) == len(second):
+            first_map[first[i]] -= 1
+        if len(first_map.keys()) == len(second):
             result += 1
         
     return result
