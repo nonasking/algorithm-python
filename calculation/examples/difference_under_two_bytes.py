@@ -3,10 +3,6 @@
 
 
 # def get_diff(a,b):
-#     if len(a) > len(b):
-#         b = '0' * (len(a)-len(b)) + b
-#     elif len(a) < len(b):
-#         a = '0' * (len(b)-len(a)) + a
 #     result = 0
 #     for i in range(len(a)):
 #         if a[i] != b[i]:
@@ -15,14 +11,15 @@
 #             return False
 #     return True
 
-# def convert_to_binary(number):
-#     return bin(number)[2:]
-
 # def func(x):
 #     y = x + 1
-#     bin_x = convert_to_binary(x)
+#     bin_x = format(x, 'b')
 #     while True:
-#         bin_y = convert_to_binary(y)
+#         bin_y = format(y, 'b')
+#         if len(bin_x) > len(bin_y):
+#             bin_y = format(y, 'b').zfill(len(bin_x))
+#         elif len(bin_x) < len(bin_y):
+#             bin_x = format(x, 'b').zfill(len(bin_y))
 #         if get_diff(bin_x,bin_y):
 #             return y
 #         y += 1
